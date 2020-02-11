@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about"
   # help page
   get "/help", to: "pages#help"
+
+  # resources
+  resources :todos
 end
