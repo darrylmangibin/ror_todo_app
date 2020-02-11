@@ -12,6 +12,9 @@
         <th>
             Description
         </th>
+        <% if @message %>
+            <p><%= @message %></p>
+        <% end %>
         <% @todos.each do |todo|%>
             <tr>
                 <td><%= todo.name %></td>

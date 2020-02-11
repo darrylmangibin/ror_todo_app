@@ -2,6 +2,9 @@ class TodosController < ApplicationController
 
     def index
         @todos = Todo.all
+        if @todos.length == 0
+            @message = "No todos to show"
+        end
     end
 
     def new
